@@ -1,53 +1,130 @@
 <script>
-	import Header from './Header.svelte';
-	import './styles.css';
+	import Header from "./Header.svelte";
+	import Footer from "./Footer.svelte";
+	import "./styles.css";
 </script>
 
 <div class="app">
-	<Header />
+	<div class="background">
+		<div class="numbers">25 + 25 + 10 = 60</div>
+		<span />
+		<span />
+		<span />
+		<span />
+		<span />
+		<span />
+		<span />
+	</div>
 
-	<main>
-		<slot />
-	</main>
-
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
+	<!-- <Header /> -->
+	<slot />
+	<Footer />
 </div>
 
-<style>
+<style lang="scss">
 	.app {
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
 	}
 
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
+	@keyframes move {
+		100% {
+			transform: translate3d(0, 0, 1px) rotate(360deg);
+		}
+	}
+	.background {
+		position: fixed;
+		height: 100vh;
 		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
+		top: 0;
+		left: 0;
+		background-image: url("$lib/images/tivoli2.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		overflow: hidden;
 
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
+		.numbers {
+			font-size: 75px;
+			width: 150px;
+			opacity: 0.5;
+			margin-left: 50px;
+			margin-right: auto;
+		}
+	
+		span {
+			width: 50vmin;
+			height: 50vmin;
+			border-radius: 50vmin;
+			backface-visibility: hidden;
+			position: absolute;
+			animation: move;
+			animation-duration: 35;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		}
+		span:nth-child(0) {
+			color: #f7c9fa;
+			top: 25%;
+			left: 34%;
+			animation-duration: 32s;
+			animation-delay: -58s;
+			transform-origin: 17vw 1vh;
+			box-shadow: 100vmin 0 13.36782181788626vmin currentColor;
+		}
+		span:nth-child(1) {
+			color: #f7c9fa;
+			top: 27%;
+			left: 69%;
+			animation-duration: 83s;
+			animation-delay: -110s;
+			transform-origin: 2vw -18vh;
+			box-shadow: 100vmin 0 13.20654960313243vmin currentColor;
+		}
+		span:nth-child(2) {
+			color: #f7c9fa;
+			top: 9%;
+			left: 96%;
+			animation-duration: 133s;
+			animation-delay: -66s;
+			transform-origin: 19vw 2vh;
+			box-shadow: -100vmin 0 13.187658890229933vmin currentColor;
+		}
+		span:nth-child(3) {
+			color: #f7c9fa;
+			top: 95%;
+			left: 32%;
+			animation-duration: 60s;
+			animation-delay: -96s;
+			transform-origin: 19vw -2vh;
+			box-shadow: 100vmin 0 13.15211828494397vmin currentColor;
+		}
+		span:nth-child(4) {
+			color: #a91bf5;
+			top: 33%;
+			left: 80%;
+			animation-duration: 86s;
+			animation-delay: -130s;
+			transform-origin: -17vw 2vh;
+			box-shadow: -100vmin 0 12.811315953812215vmin currentColor;
+		}
+		span:nth-child(5) {
+			color: #a91bf5;
+			top: 30%;
+			left: 69%;
+			animation-duration: 67s;
+			animation-delay: -2s;
+			transform-origin: 8vw -18vh;
+			box-shadow: -100vmin 0 13.195646891187385vmin currentColor;
+		}
+		span:nth-child(6) {
+			color: #a91bf5;
+			top: 15%;
+			left: 92%;
+			animation-duration: 141s;
+			animation-delay: -123s;
+			transform-origin: -10vw -12vh;
+			box-shadow: -100vmin 0 12.585025789872097vmin currentColor;
 		}
 	}
 </style>
