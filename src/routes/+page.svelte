@@ -1,7 +1,7 @@
 <script>
 	import "./styles.css";
 	import tivoli from "$lib/images/tivoli2.jpg";
-	import location from "$lib/images/location.jpg";
+	import location from "$lib/images/location.png";
 </script>
 
 <svelte:head>
@@ -27,12 +27,9 @@
 				suhteisiinsa paremmin.
 			</p>
 		</div>
+		<div class="no_background_image"><img src={tivoli} alt="" /></div>
 	</div>
 </section>
-
-<div class="wrap">
-	<div class="no_background_image"><img src={tivoli} alt="" /></div>
-</div>
 
 <section class="people">
 	<div class="wrap">
@@ -84,9 +81,11 @@
 	</div>
 </section>
 
-<div class="wrap">
-	<div class="no_background_image"><img src={tivoli} alt="" /></div>
-</div>
+<section>
+	<div class="wrap">
+		<div class="no_background_image"><img src={tivoli} alt="" /></div>
+	</div>
+</section>
 
 <section class="info">
 	<div class="wrap">
@@ -103,7 +102,7 @@
 				Sed auctor ex vel enim sollicit
 			</p>
 		</div>
-		<ul class="ponts">
+		<ul>
 			<li>
 				<div class="icon">
 					<img src={location} alt="" />
@@ -267,21 +266,34 @@
 
 	section.info {
 		backdrop-filter: blur(15px);
-
-		.poins {
-			ul {
+		padding-bottom: 100px;
+		p {
+			text-shadow: 2px 2px 10px #100122;
+		}
+		ul {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			display: flex;
+			padding: 25px 0;
+			max-width: 400px;
+			&:nth-child(even) {
+				flex-direction: row-reverse;
 			}
-			li {
-				list-style: none;
-			}
-			.point {
-			}
-			.icon {
-				height: 50px;
-				width: 50px;
-				img {
-					object-fit: contain;
-				}
+		}
+		.icon {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			img {
+				height: 70px;
+				width: 70px;
+				object-fit: contain;
+				margin: 25px;
 			}
 		}
 	}
