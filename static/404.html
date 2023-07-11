@@ -3,9 +3,124 @@
 
 <head>
 	<meta charset="utf-8" />
-	<link rel="icon" href="%sveltekit.assets%/kokoporukka.png" />
+	<link rel="icon" href="./kokoporukka.png" />
 	<meta name="viewport" content="width=device-width" />
 	<style>
+		body {
+			min-height: 100vh;
+			margin: 0;
+			font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+			color: rgb(225, 218, 255);
+		}
+
+		@keyframes move {
+			100% {
+				transform: translate3d(0, 0, 1px) rotate(360deg);
+			}
+		}
+
+		.background {
+			position: fixed;
+			height: 100vh;
+			width: 100%;
+			top: 0;
+			left: 0;
+			background-image: url("$lib/images/tivoli.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+			overflow: hidden;
+		}
+
+		.numbers {
+			font-size: 75px;
+			width: 150px;
+			opacity: 0.5;
+			margin-left: 50px;
+			margin-right: auto;
+		}
+
+		span {
+			width: 50vmin;
+			height: 50vmin;
+			border-radius: 50vmin;
+			backface-visibility: hidden;
+			position: absolute;
+			animation: move;
+			animation-duration: 35;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		}
+
+		span:nth-child(0) {
+			color: #f7c9fa;
+			top: 25%;
+			left: 34%;
+			animation-duration: 32s;
+			animation-delay: -58s;
+			transform-origin: 17vw 1vh;
+			box-shadow: 100vmin 0 13.36782181788626vmin currentColor;
+		}
+
+		span:nth-child(1) {
+			color: #f7c9fa;
+			top: 27%;
+			left: 69%;
+			animation-duration: 83s;
+			animation-delay: -110s;
+			transform-origin: 2vw -18vh;
+			box-shadow: 100vmin 0 13.20654960313243vmin currentColor;
+		}
+
+		span:nth-child(2) {
+			color: #f7c9fa;
+			top: 9%;
+			left: 96%;
+			animation-duration: 133s;
+			animation-delay: -66s;
+			transform-origin: 19vw 2vh;
+			box-shadow: -100vmin 0 13.187658890229933vmin currentColor;
+		}
+
+		span:nth-child(3) {
+			color: #f7c9fa;
+			top: 95%;
+			left: 32%;
+			animation-duration: 60s;
+			animation-delay: -96s;
+			transform-origin: 19vw -2vh;
+			box-shadow: 100vmin 0 13.15211828494397vmin currentColor;
+		}
+
+		span:nth-child(4) {
+			color: #a91bf5;
+			top: 33%;
+			left: 80%;
+			animation-duration: 86s;
+			animation-delay: -130s;
+			transform-origin: -17vw 2vh;
+			box-shadow: -100vmin 0 12.811315953812215vmin currentColor;
+		}
+
+		span:nth-child(5) {
+			color: #a91bf5;
+			top: 30%;
+			left: 69%;
+			animation-duration: 67s;
+			animation-delay: -2s;
+			transform-origin: 8vw -18vh;
+			box-shadow: -100vmin 0 13.195646891187385vmin currentColor;
+		}
+
+		span:nth-child(6) {
+			color: #a91bf5;
+			top: 15%;
+			left: 92%;
+			animation-duration: 141s;
+			animation-delay: -123s;
+			transform-origin: -10vw -12vh;
+			box-shadow: -100vmin 0 12.585025789872097vmin currentColor;
+		}
+
 		.error-content {
 			display: flex;
 			flex-direction: column;
@@ -25,16 +140,27 @@
 			color: whitesmoke;
 			text-decoration: none;
 		}
+
 		a:hover {
-				background-color: whitesmoke;
-				color: black;
-			}
+			background-color: whitesmoke;
+			color: black;
+		}
 	</style>
 
 </head>
 
 <body data-sveltekit-preload-data="hover">
 	<div class="error-content">
+		<div class="background">
+			<div class="numbers">25 + 25 + 10 = 60</div>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
 		<h1>404 Sivua ei löydy</h1>
 		<p>Palaa takaisin etusivulle senkin tyhmeliini >:(. Ei täälä ole muuta</p>
 		<a href=".">Etusivulle</a>

@@ -1,5 +1,5 @@
 <script>
-	import "./styles.css";
+	import "./styles.scss";
 	import location from "$lib/images/location.png";
 	import calendar from "$lib/images/calendar.png";
 	import clothes from "$lib/images/clothes.png";
