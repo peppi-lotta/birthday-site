@@ -55,14 +55,9 @@
 			<div class="image square-animation"><img src={peppi} alt="" /></div>
 			<h3>Peppi</h3>
 			<div class="content">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-				auctor ex vel enim sollicitLorem ipsum dolor sit amet,
-				consectetur adipiscing elit. Sed auctor ex vel enim
-				sollicitLorem ipsum dolor sit amet, consectetur adipiscing elit.
-				Sed auctor ex vel enim sollicitLorem ipsum dolor sit amet,
-				consectetur adipiscing elit. Sed auctor ex vel enim
-				sollicitLorem ipsum dolor sit amet, consectetur adipiscing elit.
-				Sed auctor ex vel enim sollicit
+				Peppi on lomautettu koodari ja nämäkin nettisivut ovat Pepin kädenjälkeä. Kuten voitte nähdä hänellä on aivan liikaa vapaa aikaa. 
+				Peppi ja Sini tapasivat vuonna 2017 kun he molemmat aloittivat fysiikan opinnot. 
+				Fysiikkan opinnot on heivattu elämästä mutta ystävyys jäin. Sini onkin Pepin oma kultahammas.
 			</div>
 		</div>
 		<div class="text-image-combo">
@@ -207,6 +202,7 @@
 			p {
 				text-shadow: 2px 2px 10px #100122;
 				backdrop-filter: blur(8px);
+				-webkit-backdrop-filter: blur(8px);
 				padding: 2px;
 			}
 		}
@@ -236,6 +232,7 @@
 		h1,
 		span {
 			backdrop-filter: blur(2px);
+			-webkit-backdrop-filter: blur(2px);
 			padding: 2px;
 			width: fit-content;
 		}
@@ -254,6 +251,7 @@
 	}
 	section.people {
 		backdrop-filter: blur(15px);
+		-webkit-backdrop-filter: blur(15px);
 		.text-image-combo {
 			width: calc(100% - 50px);
 			background-color: #100122;
@@ -312,6 +310,7 @@
 
 	section.info {
 		backdrop-filter: blur(15px);
+		-webkit-backdrop-filter: blur(15px);
 		padding-bottom: 100px;
 		p {
 			text-shadow: 2px 2px 10px #100122;
@@ -350,20 +349,5 @@
 				margin: 25px;
 			}
 		}
-	}
-	@keyframes wipe-enter {
-		0% {
-			opacity: 0;
-			transform: translateY(20px);
-		}
-		100% {
-			opacity: 1;
-			transform: translateY(0);
-		}
-	}
-
-	.wipe-enter-element {
-		animation: wipe-enter 0.5s forwards;
-		opacity: 0;
 	}
 </style>
