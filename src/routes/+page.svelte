@@ -1,7 +1,17 @@
 <script>
 	import "./styles.css";
-	import tivoli from "$lib/images/tivoli2.jpg";
 	import location from "$lib/images/location.png";
+	import calendar from "$lib/images/calendar.png";
+	import clothes from "$lib/images/clothes.png";
+	import time from "$lib/images/time.png";
+	import sauna from "$lib/images/sauna.png";
+	import cocktail from "$lib/images/cocktail.png";
+	import gift from "$lib/images/gift.png";
+	import everybody from "$lib/images/kokoporukka.png";
+	import peppi from "$lib/images/peppi.jpeg";
+	import sini from "$lib/images/sini.jpeg";
+	import siniJaPeppi from "$lib/images/siniJaPeppi.png";
+	import funkhouse from "$lib/images/funkhouse.jpeg";
 </script>
 
 <svelte:head>
@@ -19,15 +29,13 @@
 			<p>
 				Onneksi olkoon sinä onnekas ihmisoletettu! Sinut on kutsuttu
 				juhlimaan 60 vuotis juhlia 19.8.2023. Tämä voi kuulostaa
-				hämmentävältä sillä olet varma, että kutsun lähettäjä ei ole
-				lähellekkään 60 vuotias. Nämä ovatkin 25 + 25 + 10 vuotis
-				juhlat. Tämä tarkoittaa, että juhlistamme 25 vuotiaita
-				Peppi-Lottaa ja Siniä, sekä 10 vuotista IsengardFunkHousea.
-				Scrollaa alas päin ja tutustu juhlakaluihimme ja heidän välisiin
-				suhteisiinsa paremmin.
+				hämmentävältä sillä olet (melko) varma, että kutsun lähettäjä ei
+				ole lähellekkään 60 vuotias. Nämä ovatkin 25 + 25 + 10 vuotis
+				juhlat. Tämä tarkoittaa, että juhlistamme 25 vuotiaita Peppiä ja
+				Siniä, sekä 10 vuotista IsengardFunkHousea.
 			</p>
 		</div>
-		<div class="no_background_image"><img src={tivoli} alt="" /></div>
+		<div class="no_background_image"><img src={everybody} alt="" /></div>
 	</div>
 </section>
 
@@ -39,13 +47,13 @@
 				Saatat edelleen tuntea olosi hämmentyneeksi, mutta näiden
 				hauskojen infolaatikoiden jälkeen sinulla on parempi ymmärrys
 				siitä, ketä olet tulossa juhlistamaan. Lukiessasi tätä toivomme,
-				että edes yksi laatikoista saisin kellot päässäsi soimaan
-				tunnistuksen merkiksi.
+				tunnistat edes yhden laatikon henkilöistä.
 			</p>
 		</div>
 
 		<div class="text-image-combo">
-			<div class="image"><img src={tivoli} alt="" /></div>
+			<div class="image square-animation"><img src={peppi} alt="" /></div>
+			<h3>Peppi</h3>
 			<div class="content">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
 				auctor ex vel enim sollicitLorem ipsum dolor sit amet,
@@ -58,7 +66,10 @@
 			</div>
 		</div>
 		<div class="text-image-combo">
-			<div class="image"><img src={tivoli} alt="" /></div>
+			<div class="image">
+				<img src={sini} alt="" />
+			</div>
+			<h3>Sini</h3>
 			<div class="content">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
 				auctor ex vel enim sollicitLorem ipsum dolor sit amet,
@@ -69,7 +80,10 @@
 			</div>
 		</div>
 		<div class="text-image-combo">
-			<div class="image"><img src={tivoli} alt="" /></div>
+			<div class="image square-animation">
+				<img src={funkhouse} alt="" />
+			</div>
+			<h3>IsengardFunkHouse</h3>
 			<div class="content">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
 				auctor ex vel enim sollicitLorem ipsum dolor sit amet,
@@ -83,7 +97,7 @@
 
 <section>
 	<div class="wrap">
-		<div class="no_background_image"><img src={tivoli} alt="" /></div>
+		<div class="no_background_image"><img src={siniJaPeppi} alt="" /></div>
 	</div>
 </section>
 
@@ -105,14 +119,20 @@
 		<ul>
 			<li>
 				<div class="icon">
-					<img src={location} alt="" />
+					<img src={calendar} alt="" />
 				</div>
 				<div class="point">
-					ollicitLorem ipsum dolor sit amet, consectetur adipiscing
-					elit. Sed auctor ex vel enim sollicitLorem ipsum dolor sit
-					amet, consectetur adipiscing elit. Sed auctor ex vel enim
-					sollicitLorem ipsum dolor sit amet, consectetur adipiscing
-					elit. Sed auctor ex vel enim sollicit
+					Juhlat järjestetään lauantaina <b>19.8.2023</b>
+				</div>
+			</li>
+			<li>
+				<div class="icon">
+					<img src={time} alt="" />
+				</div>
+				<div class="point">
+					Juhlat alkavat klo <b>18.00</b> ja päättyvät Tivolilla
+					<b>2.00</b>. Tämä ei kuitenkaan estä jatkamasta
+					juhlallisuuksia esimerkiksi läheisessä karaole baarissa ;).
 				</div>
 			</li>
 			<li>
@@ -120,23 +140,44 @@
 					<img src={location} alt="" />
 				</div>
 				<div class="point">
-					ollicitLorem ipsum dolor sit amet, consectetur adipiscing
-					elit. Sed auctor ex vel enim sollicitLorem ipsum dolor sit
-					amet, consectetur adipiscing elit. Sed auctor ex vel enim
-					sollicitLorem ipsum dolor sit amet, consectetur adipiscing
-					elit. Sed auctor ex vel enim sollicit
+					<a href="https://goo.gl/maps/1b3TDE1bamauGCLP8"
+						>Tivoli, Uudenmaankatu 16, 20500 Turku</a
+					>
 				</div>
 			</li>
 			<li>
 				<div class="icon">
-					<img src={location} alt="" />
+					<img src={clothes} alt="" />
 				</div>
 				<div class="point">
-					ollicitLorem ipsum dolor sit amet, consectetur adipiscing
-					elit. Sed auctor ex vel enim sollicitLorem ipsum dolor sit
-					amet, consectetur adipiscing elit. Sed auctor ex vel enim
-					sollicitLorem ipsum dolor sit amet, consectetur adipiscing
-					elit. Sed auctor ex vel enim sollicit
+					Toivomme juhlijoiden ilmestyvän paikalle juhlavasti
+					pukeutuneena. Pukukoodina on cocktail-mekko, puku tai
+					vastaavan kaltainen juhlavapukeutuminen.
+				</div>
+			</li>
+			<li>
+				<div class="icon">
+					<img src={cocktail} alt="" />
+				</div>
+				<div class="point">Juhlat ovat omapullo mukaan</div>
+			</li>
+			<li>
+				<div class="icon">
+					<img src={sauna} alt="" />
+				</div>
+				<div class="point">
+					Juhlatilasta löytyy sauna. Otathan siis omat saunakamat
+					mukaan, jos haluat saunoa.
+				</div>
+			</li>
+			<li>
+				<div class="icon">
+					<img src={gift} alt="" />
+				</div>
+				<div class="point">
+					Emme odota lahjoja. Jos haluat muistaa meitä jotenkin voit
+					laittaa Mobile Payssa muutaman rahan, jotka auttavat meitä
+					vuokratilan kustannuksissa.
 				</div>
 			</li>
 		</ul>
@@ -191,7 +232,7 @@
 		}
 	}
 	section.main_banner {
-		padding-top: 400px;
+		padding-top: 200px;
 		h1,
 		span {
 			backdrop-filter: blur(2px);
@@ -201,12 +242,13 @@
 	}
 	.no_background_image {
 		z-index: 1;
-		max-width: 100%;
+		width: 100%;
 		height: auto;
 		overflow: hidden;
-		margin: 100px 0;
+		margin-bottom: 100px;
 
 		img {
+			width: 100%;
 			object-fit: contain;
 		}
 	}
@@ -219,15 +261,19 @@
 			padding: 50px 25px;
 			margin-bottom: 50px;
 			.image {
+				position: relative;
 				overflow: hidden;
-				max-height: 300px;
 				max-width: 100%;
+				aspect-ratio: 1;
 				border-radius: 20px;
 				margin-bottom: 50px;
 			}
 
 			img {
-				object-fit: cover;
+				position: absolute;
+				top: -20%;
+				right: 0;
+				width: 100%;
 			}
 		}
 	}
@@ -281,8 +327,16 @@
 			display: flex;
 			padding: 25px 0;
 			max-width: 400px;
+			align-items: center;
+			justify-content: center;
 			&:nth-child(even) {
 				flex-direction: row-reverse;
+			}
+			a {
+				color: white;
+				&:hover {
+					color: #100122;
+				}
 			}
 		}
 		.icon {
@@ -296,5 +350,20 @@
 				margin: 25px;
 			}
 		}
+	}
+	@keyframes wipe-enter {
+		0% {
+			opacity: 0;
+			transform: translateY(20px);
+		}
+		100% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	.wipe-enter-element {
+		animation: wipe-enter 0.5s forwards;
+		opacity: 0;
 	}
 </style>

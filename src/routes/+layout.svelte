@@ -39,7 +39,7 @@
 		width: 100%;
 		top: 0;
 		left: 0;
-		background-image: url("$lib/images/tivoli2.jpg");
+		background-image: url("$lib/images/tivoli.png");
 		background-size: cover;
 		background-repeat: no-repeat;
 		overflow: hidden;
