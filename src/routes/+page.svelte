@@ -22,8 +22,8 @@
 <section class="main_banner">
 	<div class="wrap">
 		<div class="title">
+			<h1>25 + 25 + 10 =</h1>
 			<div class="typewriter">
-				<span class="first-row">25 + 25 + 10 =</span>
 				<h1>60v juhlat!</h1>
 			</div>
 			<p>
@@ -87,8 +87,8 @@
 				jatkuu edelleen, eikä bändi esittelyjä kaipaa eikä, tällaisista
 				hyödykkään. Tämä viisi-hobittinen orkesteri jättää takuulla
 				kuumaksi kuin Mordor. Groove on terävämpi kuin tikku Sauronin
-				silmässä. Kipua! 
-				<br><br>Yst. terv. Joonas, Tuomo, Lauri, Ossi ja Aku
+				silmässä. Kipua!
+				<br /><br />Yst. terv. Joonas, Tuomo, Lauri, Ossi ja Aku
 			</p>
 		</div>
 	</div>
@@ -208,14 +208,15 @@
 		}
 	}
 	h1,
-	h2,
-	.title span {
+	h2 {
 		font-weight: 700;
+		-webkit-text-stroke: 0.35px;
 		text-shadow: 2px 2px 5px #100122;
 		width: fit-content;
+		padding: 0;
+		margin: 0;
 	}
-	h1,
-	.title span {
+	h1 {
 		font-size: 70px;
 		@media screen and (max-width: 600px) {
 			font-size: 50px;
@@ -223,7 +224,7 @@
 	}
 	h2 {
 		font-size: 50px;
-		padding: 50px 0;
+		padding: 50px 0 0 0;
 		@media screen and (max-width: 600px) {
 			font-size: 30px;
 		}
