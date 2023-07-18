@@ -211,7 +211,7 @@
 	h2,
 	.title span {
 		font-weight: 700;
-		text-shadow: 2px 2px 10px #100122;
+		text-shadow: 2px 2px 5px #100122;
 		width: fit-content;
 	}
 	h1,
@@ -223,6 +223,7 @@
 	}
 	h2 {
 		font-size: 50px;
+		padding: 50px 0;
 		@media screen and (max-width: 600px) {
 			font-size: 30px;
 		}
@@ -242,7 +243,7 @@
 		width: 100%;
 		height: auto;
 		overflow: hidden;
-		margin-bottom: 100px;
+		margin: 75px;
 
 		img {
 			width: 100%;
